@@ -41,6 +41,7 @@
   --243cf4: #243cf4;
   --c5cee0: #c5cee0;
   --4c5777: #4c5777;
+  --f7f9fc: #f7f9fc;
 }
 body {
   background-color: var(--f5f5f5);
@@ -60,10 +61,10 @@ body {
   border: 0;
   outline: 0;
   position: relative;
-  transition: 0.5s;
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
+  transition: 0.5s;
 }
 .myBtn::after {
   position: absolute;
@@ -73,8 +74,8 @@ body {
   left: 0;
   width: 0;
   height: 100%;
-  transition: 0.5s;
   z-index: -1;
+  transition: 0.5s;
 }
 .myBtn:hover::after {
   width: 100%;
@@ -90,6 +91,291 @@ body {
   width: 85%;
   margin: 0 auto;
 }
+
+/*sign up start*/
+.main-header {
+  border: 1px solid var(--e4e9f2);
+}
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 155px;
+  height: 70vh;
+}
+.signup-heading {
+  margin: 40px 0;
+}
+.signup-heading p {
+  font: 20px "Euclid Medium";
+  color: var(--2E3A59);
+}
+.signup-main {
+  width: 100%;
+  padding: 0 5%;
+}
+.signup-heading {
+  width: 100%;
+}
+.signup-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.one-signup-media {
+  color: var(--2E3A59);
+  font: 14px "Euclid Medium";
+  display: flex;
+  align-items: center;
+  padding: 12px 26px 12px 18px;
+  border: 1px solid var(--e4e9f2);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 48%;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.one-signup-media p {
+  z-index: 2;
+}
+.one-signup-media img {
+  margin-right: 12px;
+  z-index: 2;
+}
+.one-signup-media::after {
+  position: absolute;
+  content: "";
+  background: linear-gradient(90.19deg, #59acfb 0.08%, #7d54fd 99.76%);
+  /* background-color: var(--3366FF); */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+  /* z-index: -1; */
+}
+.one-signup-media:hover {
+  color: var(--white);
+}
+.one-signup-media:hover::after {
+  height: 100%;
+}
+.one-signup-media:hover img {
+  transition: 0.5s;
+}
+.one-signup-media:hover img {
+  filter: contrast(200%);
+}
+.sign-borders {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-borders p {
+  color: #8f9bb3;
+  font: 14px "Euclid Light";
+}
+.sign-border {
+  height: 1px;
+  background-color: #e4e9f2;
+  width: 46%;
+}
+.signup-input label p {
+  font: 12px "Euclid Regular";
+  line-height: 16px;
+  color: var(--2E3A59);
+  margin-bottom: 8px;
+  border-radius: 2px solid var(--black);
+}
+.signup-input {
+  margin-top: 25px;
+}
+.signup-input input {
+  width: 100%;
+  height: 50px;
+  background-color: var(--f7f9fc);
+  border: 1px solid var(--e4e9f2);
+  border-radius: 8px;
+  outline: none;
+}
+.signup-input input::placeholder {
+  font: 14px "Euclid Light";
+  color: #8f9bb3;
+}
+.signup-terms {
+  margin-top: 20px;
+}
+.signup-terms p {
+  font: normal 400 14px "Euclid Regular";
+}
+.signup-terms a {
+  color: var(--3366FF);
+}
+
+/* .sign-up {
+  border: none;
+  margin-top: 40px;
+  width: 100%;
+  border-radius: 8px;
+  height: 50px;
+  background-color: var(--3366FF);
+  color: #fff;
+} */
+.signup-inputs input {
+  padding: 0 16px;
+}
+.signup-main .myBtn {
+  margin-top: 40px;
+  width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+.signup-container .card {
+  /* border: 1px solid red; */
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  perspective: 1000px;
+}
+
+.card-back,
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--f5f5f5);
+}
+.card-back {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.card-inner {
+  transition: 1s;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+/* .card:hover .card-inner{
+  transform: rotateY(180deg);
+} */
+
+.rotateY180 {
+  transform: rotateY(180deg);
+}
+/* .card:hover .card-front{
+  backface-visibility: hidden;
+} */
+.backFaceHiddes {
+  backface-visibility: hidden;
+}
+
+.signup-heading {
+  width: 40%;
+  text-align: center;
+}
+.signup-heading .userSelectBtns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.userSelectBtns button {
+  font: normal 400 14px "Euclid Medium";
+  width: 40%;
+  padding: 10px 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.activeBtn {
+  /* background-color: #259ece; */
+  background: linear-gradient(90.19deg, #59acfb 0.08%, #7d54fd 99.76%);
+  color: var(--white);
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/* signup end--- */
+
+/* Login start */
+.login-heading p:nth-child(2) {
+  font-family: "Euclid Regular";
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--8f9bb3);
+}
+.login-forgotPass {
+  font-family: "Euclid Light";
+  text-align: end;
+}
+/* Login end--- */
+
+/* Forgot PassWord Page */
+.forgotPassContainer {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 72px;
+  margin-bottom: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forgotPassContainer h3 {
+  font-family: "Euclid Light";
+  color: var(--2e3a59);
+  font-size: 20px;
+  line-height: 28px;
+}
+.forgotPassContainer > p {
+  font-family: "Euclid Light";
+  color: var(--8f9bb3);
+  font-size: 14px;
+  line-height: 20px;
+  margin: 24px 0;
+  padding: 0 30px;
+}
+.forgotPassContainer .emailInput>input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  outline: 0;
+  background-color: var(--f7f9fc);
+  border-radius: 8px;
+}
+.forgotPassContainer .emailInput{
+  width: 100%;
+}
+.forgotPassContainer .emailInput input{
+  border: 1px solid var(--e4e9f2);
+}
+.forgotPassContainer .emailInput p {
+  font-family: "Euclid Light";
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.forgotPassContainer .myBtn{
+  width: 100%;
+}
+.forgotPassContainer .captcha{
+  width: 100%;
+  margin: 20px 0;
+}
+/* GOOGLE CAPTCHA */
+
+
+/* Forgot PassWord Page End--- */
 
 /* Header */
 header {
@@ -818,6 +1104,9 @@ span,
   line-height: 20px;
   padding: 20px 0 10px 0;
 }
+.copyright i{
+  margin-right: 5px;
+}
 
 /* faq start */
 .logo img {
@@ -1255,7 +1544,7 @@ span,
   align-items: center;
   margin-bottom: 22px;
 }
-input[type="checkbox"] {
+.guidesPage input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   height: 20px;
@@ -1270,7 +1559,7 @@ input[type="checkbox"] {
   outline: none;
   border: none;
 }
-input[type="checkbox"]::after {
+.guidesPage input[type="checkbox"]::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f00c";
@@ -1278,13 +1567,13 @@ input[type="checkbox"]::after {
   color: var(--white);
   display: none;
 }
-input[type="checkbox"]:hover {
+.guidesPage input[type="checkbox"]:hover {
   background-color: #dadada;
 }
-input[type="checkbox"]:checked {
+.guidesPage input[type="checkbox"]:checked {
   background-color: var(--3366FF);
 }
-input[type="checkbox"]:checked::after {
+.guidesPage input[type="checkbox"]:checked::after {
   display: block;
 }
 
