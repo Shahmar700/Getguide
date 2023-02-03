@@ -7,23 +7,23 @@
 }
 @font-face {
   font-family: "Euclid Light";
-  src: url("./Euclid/Euclid\ Circular\ A\ Light.ttf") format("woff");
+  src: url("../Euclid/Euclid\ Circular\ A\ Light.ttf") format("woff");
 }
 @font-face {
   font-family: "Euclid Regular";
-  src: url("./Euclid/Euclid\ Circular\ A\ Regular.ttf") format("woff");
+  src: url("../Euclid/Euclid\ Circular\ A\ Regular.ttf") format("woff");
 }
 @font-face {
   font-family: "Euclid Medium";
-  src: url("./Euclid/Euclid\ Circular\ A\ Medium.ttf") format("woff");
+  src: url("../Euclid/Euclid\ Circular\ A\ Medium.ttf") format("woff");
 }
 @font-face {
   font-family: "Euclid SemiBold";
-  src: url("./Euclid/Euclid\ Circular\ A\ SemiBold.ttf") format("woff");
+  src: url("../Euclid/Euclid\ Circular\ A\ SemiBold.ttf") format("woff");
 }
 @font-face {
   font-family: "Euclid Bold";
-  src: url("./Euclid/Euclid\ Circular\ A\ Bold.ttf") format("woff");
+  src: url("../Euclid/Euclid\ Circular\ A\ Bold.ttf") format("woff");
 }
 
 :root {
