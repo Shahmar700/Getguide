@@ -42,6 +42,7 @@
   --c5cee0: #c5cee0;
   --4c5777: #4c5777;
   --f7f9fc: #f7f9fc;
+  --7c8ab2: #7c8ab2;
 }
 body {
   background-color: var(--f5f5f5);
@@ -112,6 +113,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.signup-container .signUpInner{
+  width: 50%;
+  padding: 25px 52px;
+  background-color: var(--white);
+  border-radius: 8px;
+  margin-top: 40px;
+}
 /* .signup-container::before{
   content: url(../images/loginBg.png);
   background-position: center;
@@ -120,13 +128,15 @@ body {
 } */
 .signup-heading {
   margin: 40px 0;
+  width: 100% !important;
+  text-align: center;
 }
 .signup-heading p {
   font: 20px "Euclid Medium";
   color: var(--2E3A59);
 }
 .signup-main {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 .signup-heading {
@@ -1197,7 +1207,7 @@ span,
   display: flex;
   align-items: center;
   z-index: 999;
-  border-bottom: 1px solid var(--e4e9f2);
+  border-bottom: 1px solid var(--white);
 }
 
 .faq-questions {
@@ -1765,12 +1775,15 @@ span,
   display: flex;
   justify-content: space-between;
   padding-top: 72px;
+  padding-bottom: 190px;
 }
 .bookPageContainer .bookLeft {
   width: 57%;
 }
 .bookLeft .bookLeftImg {
   width: 100%;
+  height: 370px;
+  margin-bottom: 32px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -1784,7 +1797,7 @@ span,
   display: flex;
   flex-direction: column;
 }
-.bookLeftContent .bookLeftContentTop{
+.bookLeftContent .bookLeftContentTop {
   display: flex;
   justify-content: space-between;
 }
@@ -1869,7 +1882,7 @@ span,
 .bookPgRating .ratingReview {
   display: flex;
 }
-.bookPgRating .ratingReview .revCount{
+.bookPgRating .ratingReview .revCount {
   margin-right: 4px;
 }
 .bookPgRating .ratingReview p {
@@ -1878,10 +1891,10 @@ span,
   line-height: 24px;
   color: var(--8f9bb3);
 }
-.bookLeftContent .bookLeftInfo{
+.bookLeftContent .bookLeftInfo {
   width: 100%;
 }
-.infoHeader {
+.infoHeader li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1896,20 +1909,144 @@ span,
   line-height: 24px;
   color: var(--2e3a59);
 }
+.infoHeader i {
+  transition: 0.4s;
+}
 .rotate180 {
   transform: rotate(180deg);
 }
-.dropdownHide{
+/* .dropdownHide{
   height: 0;
   overflow: hidden;
   transition: 0.5s;
+} */
+
+.infoResponse {
+  display: none;
 }
-
-
+.red {
+  color: red;
+}
 
 .bookPageContainer .bookRight {
   width: 38%;
 }
+.bookYourGuide {
+  text-align: center;
+  border: 1px solid var(--c5cee0);
+  border-radius: 16px;
+  padding: 53px 85px;
+  margin-bottom: 45px;
+}
+.bookYourGuide > p {
+  font-family: "Euclid Regular";
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 56px;
+}
+.bookYourGuide input {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 14px;
+  background-color: var(--e4e9f2);
+  font-size: 18px;
+}
+.bookYourGuide .input {
+  background-color: var(--e4e9f2);
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+.guestsInput {
+  padding-right: 20px !important;
+}
+.languageInput label {
+  text-align: start;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  padding: 14px;
+  background-color: var(--e4e9f2);
+  font-size: 18px;
+  color: var(--8f9bb3);
+}
+.languageInput select {
+  font-family: "Euclid Regular";
+  border: 0;
+  outline: 0;
+  background-color: var(--e4e9f2);
+}
+.bookGuideBtn {
+  width: 100%;
+}
+
+.peopleSay {
+  text-align: center;
+  border: 1px solid var(--c5cee0);
+  border-radius: 16px;
+  padding: 44px 24px;
+}
+.peopleSay > p {
+  font-family: "Euclid Regular";
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 56px;
+}
+
+.onePerson{
+  margin-bottom: 24px;
+}
+.onePerson .topSide {
+  margin-bottom: 16px;
+}
+.onePerson .topSide .person .personImg {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+.topSide .person .personImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.onePerson .topSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.onePerson .topSide .person {
+  display: flex;
+  align-items: center;
+}
+.onePerson .topSide .rating {
+  display: flex;
+  align-items: center;
+}
+.onePerson .topSide .ratingCount {
+  font-family: "Euclid Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--7c8ab2);
+  margin-left: 16px;
+}
+.onePerson .topSide .rating i {
+  color: #fdeb4c;
+}
+.onePerson .bottomSide {
+  font-family: "Euclid Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--4c5777);
+  text-align: start;
+  padding-right: 7%;
+}
+.peopleSay .myBtn{
+  width: 60%;
+}
 /* Book Guide Page End--- */
-
-
