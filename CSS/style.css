@@ -93,6 +93,11 @@ body {
 }
 
 /*sign up start*/
+
+.hide {
+  display: none;
+}
+
 .main-header {
   border: 1px solid var(--e4e9f2);
 }
@@ -101,9 +106,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 155px;
-  height: 70vh;
+  padding-bottom: 155px;
+  background: url(../images/loginBg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+/* .signup-container::before{
+  content: url(../images/loginBg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
 .signup-heading {
   margin: 40px 0;
 }
@@ -112,8 +126,8 @@ body {
   color: var(--2E3A59);
 }
 .signup-main {
-  width: 100%;
-  padding: 0 5%;
+  width: 50%;
+  margin: 0 auto;
 }
 .signup-heading {
   width: 100%;
@@ -235,16 +249,16 @@ body {
 }
 
 /*-------------------------------------------------------------------------------------------*/
-.signup-container .card {
-  /* border: 1px solid red; */
+/* .signup-container .card {
+  border: 1px solid red;
   width: 50%;
   margin: 0 auto;
   position: relative;
   height: 100vh;
   perspective: 1000px;
-}
+} */
 
-.card-back,
+/* .card-back,
 .card-front {
   position: absolute;
   width: 100%;
@@ -252,24 +266,24 @@ body {
   top: 0;
   left: 0;
   background-color: var(--f5f5f5);
-}
-.card-back {
+} */
+/* .card-back {
   transform: rotateY(180deg);
   backface-visibility: hidden;
-}
-.card-inner {
+} */
+/* .card-inner {
   transition: 1s;
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-}
+} */
 /* .card:hover .card-inner{
   transform: rotateY(180deg);
 } */
 
-.rotateY180 {
+/* .rotateY180 {
   transform: rotateY(180deg);
-}
+} */
 /* .card:hover .card-front{
   backface-visibility: hidden;
 } */
@@ -345,7 +359,7 @@ body {
   margin: 24px 0;
   padding: 0 30px;
 }
-.forgotPassContainer .emailInput>input {
+.forgotPassContainer .emailInput > input {
   width: 100%;
   padding: 14px 16px;
   border: 0;
@@ -353,10 +367,10 @@ body {
   background-color: var(--f7f9fc);
   border-radius: 8px;
 }
-.forgotPassContainer .emailInput{
+.forgotPassContainer .emailInput {
   width: 100%;
 }
-.forgotPassContainer .emailInput input{
+.forgotPassContainer .emailInput input {
   border: 1px solid var(--e4e9f2);
 }
 .forgotPassContainer .emailInput p {
@@ -365,15 +379,14 @@ body {
   line-height: 24px;
   margin-bottom: 8px;
 }
-.forgotPassContainer .myBtn{
+.forgotPassContainer .myBtn {
   width: 100%;
 }
-.forgotPassContainer .captcha{
+.forgotPassContainer .captcha {
   width: 100%;
   margin: 20px 0;
 }
 /* GOOGLE CAPTCHA */
-
 
 /* Forgot PassWord Page End--- */
 
@@ -1104,7 +1117,7 @@ span,
   line-height: 20px;
   padding: 20px 0 10px 0;
 }
-.copyright i{
+.copyright i {
   margin-right: 5px;
 }
 
@@ -1745,3 +1758,158 @@ span,
   line-height: 20px;
 }
 /* About Guide Page End--- */
+
+/* Book Guide Page Start */
+
+.bookPageContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 72px;
+}
+.bookPageContainer .bookLeft {
+  width: 57%;
+}
+.bookLeft .bookLeftImg {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bookLeft .bookLeftImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bookLeftContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bookLeftContent .bookLeftContentTop{
+  display: flex;
+  justify-content: space-between;
+}
+.bookLeftContent .contentLeft {
+  display: flex;
+  flex-direction: column;
+}
+.contentLeft > h1 {
+  font-family: "Euclid Regular";
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--2e3a59);
+  margin-bottom: 18px;
+}
+.bookLeftContent .contentLeft div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.contentLeft h4 {
+  font-family: "Euclid Light";
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--2e3a59);
+  margin-right: 14px;
+}
+.contentLeft p {
+  font-family: "Euclid Light";
+  font-size: 16px;
+  line-height: 24px;
+}
+.bookLeftContent .contentRight {
+  display: flex;
+  flex-direction: column;
+}
+.contentRight .bookPgPrice {
+  display: flex;
+  margin-bottom: 18px;
+}
+.contentRight .bookPgPrice h2 {
+  font-family: "Euclid Light";
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--2e3a59);
+}
+.contentRight .bookPgPrice h3 {
+  font-family: "Euclid Light";
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--2e3a59);
+  margin: 0 3px;
+}
+.contentRight .bookPgPrice p {
+  font-family: "Euclid Light";
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--8f9bb3);
+}
+.contentRight .bookPgRating {
+  display: flex;
+  justify-content: space-between;
+}
+.bookPgRating .ratingStars {
+  display: flex;
+  align-items: center;
+}
+.bookPgRating .ratingStars i {
+  color: #fdeb4c;
+  font-size: 16px;
+  margin-right: 4px;
+}
+.bookPgRating .ratingStars p {
+  font-family: "Euclid Light";
+  color: var(--8f9bb3);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bookPgRating .ratingReview {
+  display: flex;
+}
+.bookPgRating .ratingReview {
+  display: flex;
+}
+.bookPgRating .ratingReview .revCount{
+  margin-right: 4px;
+}
+.bookPgRating .ratingReview p {
+  font-family: "Euclid Light";
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--8f9bb3);
+}
+.bookLeftContent .bookLeftInfo{
+  width: 100%;
+}
+.infoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 2px solid var(--e4e9f2);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.infoHeader h4 {
+  font-family: "Euclid Light";
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--2e3a59);
+}
+.rotate180 {
+  transform: rotate(180deg);
+}
+.dropdownHide{
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+
+
+.bookPageContainer .bookRight {
+  width: 38%;
+}
+/* Book Guide Page End--- */
+
+
