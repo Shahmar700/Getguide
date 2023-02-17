@@ -113,7 +113,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.signup-container .signUpInner{
+.signup-container .signUpInner {
   width: 50%;
   padding: 25px 52px;
   background-color: var(--white);
@@ -1997,7 +1997,7 @@ span,
   margin-bottom: 56px;
 }
 
-.onePerson{
+.onePerson {
   margin-bottom: 24px;
 }
 .onePerson .topSide {
@@ -2046,7 +2046,163 @@ span,
   text-align: start;
   padding-right: 7%;
 }
-.peopleSay .myBtn{
+.peopleSay .myBtn {
   width: 60%;
 }
 /* Book Guide Page End--- */
+
+/* clickActivationPage */
+.clickActivationPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 96px);
+}
+.clickActivationPage .clickActivationModal {
+  width: 37%;
+  padding: 25px 37px 36px 37px;
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+.clickActivationModal h1 {
+  font-family: "Euclid Light";
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 17px;
+}
+.clickActivationModal p {
+  font-family: "Euclid Medium";
+  font-size: 16px;
+  line-height: 28px;
+}
+/* clickActivationPage End ---*/
+
+/* verifyPage */
+.verifyPageContainer {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.verifyContent {
+  width: 60%;
+  padding: 82px 52px 0px 52px;
+  background-color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.verifyContentLogo {
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.verifyContentLogo::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 27%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--e4e9f2);
+}
+/* .verifyContentLogo {
+  width: 273px;
+  height: 47px;
+}
+.verifyContentLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+.verifyTexts {
+  margin-bottom: 50px;
+}
+.verifyContent p {
+  font-family: "Euclid Regular";
+  font-size: 31px;
+  line-height: 28px;
+  margin-bottom: 33px;
+}
+.verifyBtn {
+  text-align: center;
+  width: 100%;
+  padding: 18px;
+}
+.verifyBtn a {
+  font-family: "Euclid Regular";
+  font-size: 22px;
+  line-height: 16px;
+  padding: 16px 98px;
+  background-color: var(--3366FF);
+  border-radius: 8px;
+  color: var(--white);
+}
+.verifyFooter {
+  display: flex;
+  justify-content: flex-start;
+}
+.verifyFooter {
+  font-family: "Euclid Light";
+  margin-top: 105px;
+}
+.verifyFooter i {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--3e4b6c);
+  margin-right: 10px;
+}
+.verifyFooter p {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--3e4b6c);
+}
+/* verifyPage end--- */
+
+/* Success Page */
+
+.whiteNav.successPage {
+  display: none;
+}
+.main-right-nav.successPage {
+  display: none;
+}
+
+.succesFullModal img {
+  width: 75px;
+  height: 75px;
+  color: var(--243cf4);
+  margin: 0 auto;
+}
+
+.succesFullModal {
+  background-color: var(--white);
+  padding: 25px 129px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.succesFullModal h1 {
+  font-family: "Euclid Light";
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.succesFullModal p {
+  font-family: "Euclid Light";
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.succesFullModal .myBtn{
+  margin: 0 auto;
+  width: 60%;
+}
