@@ -1,18 +1,19 @@
-let guideBtn = document.querySelector(".guideBtn");
-let companyBtn = document.querySelector(".companyBtn");
-let guideSide = document.querySelector(".guideSide");
-let companySide = document.querySelector(".companySide");
+let guide = document.getElementById("guide");
+let company = document.getElementById("company");
+let driver = document.getElementById("driver");
 
-guideBtn.addEventListener("click", () => {
-  guideBtn.classList.add("activeBtn");
-  companyBtn.classList.remove("activeBtn");
-  companySide.classList.add("hide");
-  guideSide.classList.remove("hide");
+guide.addEventListener("click", () => {
+  guide.checked = true;
+  company.checked = false;
+  driver.checked = false;
 });
-
-companyBtn.addEventListener("click", () => {
-  companyBtn.classList.add("activeBtn");
-  guideBtn.classList.remove("activeBtn");
-  companySide.classList.remove("hide");
-  guideSide.classList.add("hide");
+company.addEventListener("click", () => {
+  company.checked = true;
+  guide.checked = false;
+  driver.checked = false;
+});
+driver.addEventListener("click", () => {
+  driver.checked = true;
+  guide.checked = false;
+  company.checked = false;
 });

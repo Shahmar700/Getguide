@@ -253,9 +253,14 @@ body {
 .signup-inputs input {
   padding: 0 16px;
 }
-.signup-main .myBtn {
-  margin-top: 40px;
+.signUpBtn {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.signup-main .signUpBtn .myBtn {
+  margin-top: 40px;
+  width: 250px;
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -305,27 +310,73 @@ body {
   width: 40%;
   text-align: center;
 }
-.signup-heading .userSelectBtns {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.userSelectBtns button {
-  font: normal 400 14px "Euclid Medium";
-  width: 40%;
-  padding: 10px 0;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  border-radius: 9px;
-}
 
 .activeBtn {
   /* background-color: #259ece; */
   background: linear-gradient(90.19deg, #59acfb 0.08%, #7d54fd 99.76%);
   color: var(--white);
 }
+.signAs {
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #eff4ff;
+  padding: 10px 30px 15px 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+.signAs h3 {
+  font-family: "Euclid Light";
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 24px;
+  color: var(--3366FF);
+  margin-bottom: 20px;
+}
+.signAs ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signAs ul li {
+  font-family: "Euclid Medium";
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  user-select: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--3366FF);
+}
+.signAs ul li label {
+  cursor: pointer;
+}
+.signAs ul input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 1px solid var(--3366FF);
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signAs ul input[type="checkbox"]:hover {
+  background-color: #dadada;
+}
+.signAs ul input[type="checkbox"]:checked {
+  background-color: var(--3366FF);
+}
+/* .radioColor {
+  background-color: var(--3366FF);
+} */
 
 /*-------------------------------------------------------------------------------------------*/
 
@@ -2202,7 +2253,7 @@ span,
   font-size: 16px;
   line-height: 28px;
 }
-.succesFullModal .myBtn{
+.succesFullModal .myBtn {
   margin: 0 auto;
   width: 60%;
 }

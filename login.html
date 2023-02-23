@@ -54,10 +54,6 @@
         <div class="signup-heading login-heading">
           <p>Login</p>
           <p>Hello again!</p>
-          <div class="userSelectBtns">
-            <button class="guideBtn activeBtn">As Guide</button>
-            <button class="companyBtn">As Company</button>
-          </div>
         </div>
 
         <div class="signup-main guideSide">
@@ -104,61 +100,30 @@
                 />
               </div>
             </div>
-            <div class="signup-terms login-forgotPass">
-              <a href="./forgotPass.html">Forgot password?</a>
-            </div>
-            <button class="myBtn">Log in</button>
-          </form>
-        </div>
+            <div class="signAs">
+              <h3>Login as:</h3>
 
-        <div class="signup-main companySide hide">
-          <div class="signup-media">
-            <a
-              target="_blank"
-              href="https://www.google.com/"
-              href=""
-              class="one-signup-media"
-            >
-              <img src="./images/google.png" />
-              <p>with Google</p>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/"
-              class="one-signup-media"
-            >
-              <img src="./images/facebook.png" />
-              <p>with Facebook</p>
-            </a>
-          </div>
-          <div class="sign-borders">
-            <div class="sign-border"></div>
-            <p>or</p>
-            <div class="sign-border"></div>
-          </div>
-          <form>
-            <div class="signup-inputs">
-              <div class="signup-input">
-                <label for="email"><p>Company Email</p></label>
-                <input
-                  type="text"
-                  id="email"
-                  placeholder="Enter Company email"
-                />
-              </div>
-              <div class="signup-input">
-                <label for="password"><p>Password</p></label>
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="Enter password"
-                />
-              </div>
+              <ul>
+                <li>
+                  <input type="checkbox" id="guide" />
+                  <label for="guide">Guide</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="company" />
+                  <label for="company">Company</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="driver" />
+                  <label for="driver">Driver</label>
+                </li>
+              </ul>
             </div>
             <div class="signup-terms login-forgotPass">
               <a href="./forgotPass.html">Forgot password?</a>
             </div>
-            <button class="myBtn">Log in</button>
+            <div class="signUpBtn">
+              <button class="myBtn">Log in</button>
+            </div>
           </form>
         </div>
       </div>
