@@ -260,7 +260,7 @@ body {
 }
 .signup-main .signUpBtn .myBtn {
   margin-top: 40px;
-  width: 250px;
+  width: 100%;
 }
 
 /*-------------------------------------------------------------------------------------------*/
@@ -373,6 +373,13 @@ body {
 }
 .signAs ul input[type="checkbox"]:checked {
   background-color: var(--3366FF);
+}
+.signAs #reqSpan{
+  font-family: "Euclid Regular";
+  color: red;
+}
+.none{
+  display: none;
 }
 /* .radioColor {
   background-color: var(--3366FF);
