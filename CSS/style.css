@@ -374,11 +374,11 @@ body {
 .signAs ul input[type="checkbox"]:checked {
   background-color: var(--3366FF);
 }
-.signAs #reqSpan{
+.signAs #reqSpan {
   font-family: "Euclid Regular";
   color: red;
 }
-.none{
+.none {
   display: none;
 }
 /* .radioColor {
@@ -2264,3 +2264,246 @@ span,
   margin: 0 auto;
   width: 60%;
 }
+/* Success Page End--- */
+
+/* Account Verification */
+.accVerifyContainer {
+  background-color: #d6e0ff;
+  width: 100%;
+  height: calc(100vh - 96px);
+  padding-top: 150px;
+}
+.accVerifyInner {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.accVerifyInner h1 {
+  font-family: "Euclid Light";
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--2e3a59);
+}
+.accVerifyInner .successLine {
+  margin-top: 28px;
+  margin-bottom: 39px;
+  width: 100%;
+  height: 2px;
+  background-color: #b3b8e0;
+  position: relative;
+}
+.accVerifyInner .successLine::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: var(--width, 0%);
+  height: 100%;
+  background-color: var(--3366FF);
+}
+.accVerifyInner .successLine #twentyFive {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: #d6e0ff;
+  border: 1px solid #b3b8e0;
+}
+.accVerifyInner .successLine #fifty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: #d6e0ff;
+  border: 1px solid #b3b8e0;
+}
+.accVerifyInner .successLine #seventyFive {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-color: #d6e0ff;
+  border: 1px solid #b3b8e0;
+}
+.accVerifyInner .verifyStep {
+  padding: 25px 60px 25px 20px;
+  background-color: var(--white);
+  border-radius: 8px;
+  text-align: start;
+}
+.accVerifyInner .verifyStep h3 {
+  font-family: "Euclid Light";
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--2e3a59);
+}
+.accVerifyInner .firstStep p {
+  font-family: "Euclid Regular";
+  margin-top: 24px;
+  margin-bottom: 36px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.firstStep form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.verifyStep .firstBtn {
+  width: 200px;
+}
+
+.secondStep form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secondStep form label {
+  width: 100%;
+  margin-bottom: 17px;
+}
+.secondStep form label p {
+  font-family: "Euclid Regular";
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #02021c;
+}
+.secondStep form label input {
+  width: 100%;
+  font-family: "Euclid Regular";
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #c6cace;
+  outline: 0;
+}
+/* ---------------------- */
+.secondStep .secondBottom {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.secondStep .secondBottom > p {
+  font-family: "Euclid Regular";
+
+}
+.secondStep .uploadVideo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Euclid Regular";
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.secondStep .uploadVideo input[type="file"] {
+  display: none;
+}
+.secondStep .addVideoFile label {
+  font-family: "Euclid Medium";
+  padding: 16px 30px;
+  background-color: #d6e0ff;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--3366FF);
+  cursor: pointer;
+}
+/* ---------------------- */
+.stepButtons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.verifyStep .stepButtons .myBtn {
+  width: 200px;
+}
+.verifyStep .stepButtons .nextBtn {
+  background: linear-gradient(90.19deg, #59acfb 0.08%, #7d54fd 99.76%);
+}
+.verifyStep .stepButtons .myBtn.prevBtn {
+  background-color: #5c85ff;
+}
+
+.verifyStep.thirdStep {
+  padding: 30px !important;
+  padding-right: 30px !important;
+}
+.thirdStep .thirdTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.thirdStep input[type="file"] {
+  display: none;
+}
+.thirdStep .addFile label {
+  font-family: "Euclid Medium";
+  padding: 16px 30px;
+  background-color: #d6e0ff;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--3366FF);
+  cursor: pointer;
+}
+
+.thirdBottom {
+  width: 100%;
+  margin-top: 17px;
+}
+.thirdStep label {
+  width: 100%;
+}
+.thirdBottom label input {
+  width: 100%;
+  font-family: "Euclid Regular";
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #c6cace;
+  outline: 0;
+  margin-bottom: 19px;
+}
+.thirdBottom label p {
+  font-family: "Euclid Regular";
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #02021c;
+}
+.thirdBottom label .langSelect {
+  width: 100%;
+  font-family: "Euclid Regular";
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #c6cace;
+  outline: 0;
+  margin-bottom: 19px;
+}
+#numInputLabel>p{
+  margin-top: 19px !important;
+}
+.thirdBottom .numberInput {
+  display: flex;
+}
+.thirdBottom .numberInput .countriesOptions {
+  width: 80px;
+  height: 39px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #c6cace;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+/* Account Verification End--- */
