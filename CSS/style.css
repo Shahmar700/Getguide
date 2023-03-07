@@ -98,7 +98,17 @@ body {
 .hide {
   display: none;
 }
-
+.headerProfile {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.headerProfile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .main-header {
   border: 1px solid var(--e4e9f2);
 }
@@ -120,12 +130,6 @@ body {
   border-radius: 8px;
   margin-top: 40px;
 }
-/* .signup-container::before{
-  content: url(../images/loginBg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 .signup-heading {
   margin: 40px 0;
   width: 100% !important;
@@ -241,15 +245,6 @@ body {
   color: var(--3366FF);
 }
 
-/* .sign-up {
-  border: none;
-  margin-top: 40px;
-  width: 100%;
-  border-radius: 8px;
-  height: 50px;
-  background-color: var(--3366FF);
-  color: #fff;
-} */
 .signup-inputs input {
   padding: 0 16px;
 }
@@ -2462,7 +2457,7 @@ span,
 .verifyStep .stepButtons .myBtn.prevBtn {
   background-color: #5c85ff;
 }
-.stepButtons a{ 
+.stepButtons a {
   width: max-content !important;
   padding: 14px 50px !important;
 }
@@ -2543,3 +2538,552 @@ span,
   cursor: pointer;
 }
 /* Account Verification End--- */
+
+/* My Profile Page */
+.myProfileContainer {
+  background-color: #d6e0ff;
+  padding: 52px 0;
+}
+.myProfileContainer .contForNav {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.myProfileInner {
+  width: 100%;
+  background-color: var(--white);
+  box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
+    8px 8px 40px rgba(125, 153, 180, 0.2);
+  border-radius: 8px;
+  padding: 60px 77px;
+}
+.myProfileInner .profileHeader p {
+  font-family: "Euclid Medium";
+  font-size: 20px;
+  line-height: 28px;
+  color: #2e3a59;
+}
+.myProfileInner .profileBody {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 17px;
+}
+.myProfileInner .proflePhoto {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.myProfileInner .proflePhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.myProfileInner .proflePhoto i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: var(--white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.myProfileInner .profileBody form {
+  margin-top: 24px;
+}
+.myProfileInner .profileBody .profileInputs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.myProfileInner .profileBody form label {
+  width: 47%;
+}
+.myProfileInner .profileBody form label:nth-child(3),
+.myProfileInner .profileBody form label:nth-child(4) {
+  margin-top: 24px;
+}
+.myProfileInner .profileBody form label p {
+  font: 12px "Euclid Regular";
+  line-height: 16px;
+  color: var(--2E3A59);
+  margin-bottom: 8px;
+  border-radius: 2px solid var(--black);
+}
+.myProfileInner .profileBody form input {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: var(--f7f9fc);
+  border: 1px solid var(--e4e9f2);
+  border-radius: 8px;
+  outline: none;
+}
+.myProfileInner .profileBtn {
+  width: 100%;
+  text-align: center;
+  margin-top: 44px;
+}
+.myProfileInner .profileBtn i {
+  margin-right: 10px;
+}
+.contForNav .navigation {
+  width: 60px;
+  padding: 37px 13px;
+  padding-bottom: 10px;
+  background: var(--3366FF);
+  box-shadow: 4px 4px 4px rgba(86, 144, 198, 0.11),
+    8px 8px 40px rgba(125, 153, 180, 0.2);
+  border-radius: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: -30px;
+}
+.contForNav .navigation i {
+  color: var(--white);
+  margin-bottom: 27px;
+  cursor: pointer;
+}
+.contForNav .navigation i:nth-child(4) {
+  margin: 0;
+}
+.activeIcon {
+  padding: 10px;
+  background-color: #2952cc;
+  border-radius: 50%;
+}
+
+.myProfileInner .calendarHeader p {
+  font-family: "Euclid Medium";
+  font-size: 20px;
+  line-height: 28px;
+  color: #2e3a59;
+}
+.myProfileInner .calendarBody {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendarBody .calendarLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendarBody .calendarLeft form input {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 16px;
+  background-color: var(--f7f9fc);
+  border: 1px solid var(--e4e9f2);
+  border-radius: 8px;
+  outline: none;
+}
+.calendarBody .calendarLeft form textarea {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 16px;
+  background-color: var(--f7f9fc);
+  border: 1px solid var(--e4e9f2);
+  border-radius: 8px;
+  outline: none;
+}
+.calendarLeft .calendarSubmitBtn {
+  margin-top: 36px;
+}
+.calendarSubmitBtn .myBtn {
+  font-size: 15px;
+}
+
+/* Notification in Profile */
+.myProfileInner .profileHeader p {
+  font-family: "Euclid Medium";
+  font-size: 20px;
+  line-height: 28px;
+  color: #2e3a59;
+}
+.myProfileInner .notificationBody {
+  margin-top: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+.notificationBody .notificationLeft {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.notificationLeft .not {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #edf1f7;
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+  font-family: "Euclid Light";
+  padding: 16px 20px;
+  cursor: pointer;
+}
+.activeNotification {
+  background: rgba(235, 240, 255, 0.78);
+}
+.notificationLeft .not .notContent{
+  display: none;
+}
+.notificationLeft .notLeft {
+  display: flex;
+  align-items: center;
+}
+.notificationLeft .notLeft span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--3366FF);
+  margin-left: 0;
+  margin-right: 16px;
+}
+.notificationBody .notificationRight {
+  width: 50%;
+  position: relative;
+}
+.notificationRight .rightNextPrev {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.rightNextPrev i {
+  cursor: pointer;
+  font-size: 20px;
+  color: #3366ff;
+}
+.rightNextPrev p {
+  font-family: "Euclid Light";
+  margin: 0 5px;
+}
+.notificationRight .rightHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  font-family: "Euclid Medium";
+}
+.notificationRight .rightBody {
+  padding-right: 5%;
+  padding-bottom: 20px;
+}
+.notificationRight .rightBody p {
+  font-family: "Euclid Light";
+  text-align: justify;
+}
+/* Notification Profile End --- */
+
+/* Calendar in Profile */
+:root {
+  --dark-body: #4d4c5a;
+  --dark-main: #141529;
+  --dark-second: #79788c;
+  --dark-hover: #323048;
+  --dark-text: #f8fbff;
+
+  --light-body: #f3f8fe;
+  --light-main: #fdfdfd;
+  --light-second: #c3c2c8;
+  --light-hover: #edf0f5;
+  --light-text: #151426;
+
+  --blue: #0000ff;
+  --white: #fff;
+
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  --font-family: cursive;
+}
+
+.dark {
+  --bg-body: var(--dark-body);
+  --bg-main: var(--dark-main);
+  --bg-second: var(--dark-second);
+  --color-hover: var(--dark-hover);
+  --color-txt: var(--dark-text);
+}
+
+.light {
+  --bg-body: var(--light-body);
+  --bg-main: var(--light-main);
+  --bg-second: var(--light-second);
+  --color-hover: var(--light-hover);
+  --color-txt: var(--light-text);
+}
+
+.calendar {
+  height: max-content;
+  width: max-content;
+  background-color: var(--bg-main);
+  border-radius: 30px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  /* transform: scale(1.25); */
+}
+
+.light .calendar {
+  box-shadow: var(--shadow);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--color-txt);
+  padding: 10px;
+}
+
+.calendar-body {
+  padding: 10px;
+}
+
+.calendar-week-day {
+  height: 50px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: 600;
+}
+
+.calendar-week-day div {
+  display: grid;
+  place-items: center;
+  color: var(--bg-second);
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  color: var(--color-txt);
+}
+
+.calendar-days div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+  animation: to-top 1s forwards;
+  /* border-radius: 50%; */
+}
+
+.calendar-days div span {
+  position: absolute;
+}
+
+.calendar-days div:hover span {
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+.calendar-days div span:nth-child(1),
+.calendar-days div span:nth-child(3) {
+  width: 2px;
+  height: 0;
+  background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(1),
+.calendar-days div:hover span:nth-child(3) {
+  height: 100%;
+}
+
+.calendar-days div span:nth-child(1) {
+  bottom: 0;
+  left: 0;
+}
+
+.calendar-days div span:nth-child(3) {
+  top: 0;
+  right: 0;
+}
+
+.calendar-days div span:nth-child(2),
+.calendar-days div span:nth-child(4) {
+  width: 0;
+  height: 2px;
+  background-color: var(--color-txt);
+}
+
+.calendar-days div:hover span:nth-child(2),
+.calendar-days div:hover span:nth-child(4) {
+  width: 100%;
+}
+
+.calendar-days div span:nth-child(2) {
+  top: 0;
+  left: 0;
+}
+
+.calendar-days div span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.calendar-days div:hover span:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.calendar-days div:hover span:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.calendar-days div:hover span:nth-child(4) {
+  transition-delay: 0.6s;
+}
+
+.calendar-days div.curr-date,
+.calendar-days div.curr-date:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.calendar-days div.curr-date span {
+  display: none;
+}
+
+.month-picker {
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.month-picker:hover {
+  background-color: var(--color-hover);
+}
+
+.year-picker {
+  display: flex;
+  align-items: center;
+}
+
+.year-change {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.year-change:hover {
+  background-color: var(--color-hover);
+}
+
+.calendar-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+}
+
+.toggle span {
+  margin-right: 10px;
+  color: var(--color-txt);
+}
+
+.dark-mode-switch {
+  position: relative;
+  width: 48px;
+  height: 25px;
+  border-radius: 14px;
+  background-color: #151426;
+  cursor: pointer;
+}
+
+.dark-mode-switch-ident {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: var(--bg-main);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.2s ease-in-out;
+}
+
+.dark .dark-mode-switch .dark-mode-switch-ident {
+  top: 2px;
+  left: calc(2px + 50%);
+}
+
+.month-list {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #141529;
+  padding: 20px;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  display: grid;
+  transform: scale(1.5);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.month-list.show {
+  transform: scale(1);
+  visibility: visible;
+  pointer-events: visible;
+  transition: all 0.2s ease-in-out;
+}
+
+.month-list > div {
+  display: grid;
+  place-items: center;
+}
+
+.month-list > div > div {
+  width: 100%;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--color-txt);
+}
+
+.month-list > div > div:hover {
+  background-color: var(--color-hover);
+}
+
+@keyframes to-top {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Calendar in Profile End ---- */
+/* My Profile Page End --- */

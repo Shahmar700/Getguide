@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="main-header">
+      <div class="total container">
+        <div class="left-nav">
+          <div class="logo">
+            <a href="/"><img src="./images/Logo.png" alt="loqo" /></a>
+          </div>
+          <ul class="main-nav whiteNav">
+            <li><a href="./guides.html">Tour Guides</a></li>
+            <!-- <li><a href="#">Partners</a></li> -->
+            <li><a href="./blogs.html">Blogs</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li class="FAQ">
+              <a href="./faq.html"
+                >FAQ <i class="fa-light fa-comments-question"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-right-nav">
+          <div class="main-lang">
+            Az
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="headerProfile">
+            <img src="./images/guide.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="myProfileContainer">
+      <div class="contForNav">
+        <div class="navigation">
+          <i id="profIcon" class="fa-light fa-user activeIcon"></i>
+          <i id="calendarIcon" class="fa-light fa-calendars"></i>
+          <i id="notIcon" class="fa-light fa-bell"></i>
+          <a href="/">
+            <i class="fa-light fa-arrow-right-from-arc"></i>
+          </a>
+        </div>
+        <div class="myProfileInner personalInfo">
+          <div class="profileHeader"><p>Şəxsi məlumatlar</p></div>
+          <div class="profileBody">
+            <div class="proflePhoto">
+              <img src="./images/guide.jpg" alt="" />
+              <i class="fa-light fa-camera"></i>
+            </div>
+            <form action="">
+              <div class="profileInputs">
+                <label for="">
+                  <p>Ad, Soyad</p>
+                  <input
+                    type="text"
+                    placeholder="Ad və soyadınızı daxil edin"
+                  />
+                </label>
+                <label for="">
+                  <p>Mobil nömrə</p>
+                  <input type="text" placeholder="000-00-00" />
+                </label>
+                <label for="">
+                  <p>E-mail</p>
+                  <input type="text" placeholder="example@gmail.com" />
+                </label>
+                <label for="">
+                  <p>Şifrə</p>
+                  <input type="password" placeholder="Şifrənizi daxil edin" />
+                </label>
+              </div>
+              <div class="profileBtn">
+                <button class="myBtn">
+                  <i class="fa-light fa-pen-line"></i>
+                  Məlumatları yenilə
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="myProfileInner calendarPage none">
+          <div class="calendarHeader"><p>Calendar</p></div>
+          <div class="calendarBody">
+            <div class="calendarLeft">
+              <div class="todayDate">
+                <p>September 9 /2023</p>
+              </div>
+              <form action="">
+                <input type="text" placeholder="placeholder" />
+                <input type="text" placeholder="placeholder" />
+                <textarea rows="5" cols="50"></textarea>
+                <div class="calendarSubmitBtn">
+                  <button class="myBtn">SUBMIT</button>
+                </div>
+              </form>
+            </div>
+            <div class="calendarRight">
+              <div class="calendar">
+                <div class="calendar-header">
+                  <span class="month-picker" id="month-picker">February</span>
+                  <div class="year-picker">
+                    <span class="year-change" id="prev-year">
+                      <pre><</pre>
+                    </span>
+                    <span id="year">2021</span>
+                    <span class="year-change" id="next-year">
+                      <pre>></pre>
+                    </span>
+                  </div>
+                </div>
+                <div class="calendar-body">
+                  <div class="calendar-week-day">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                  </div>
+                  <div class="calendar-days"></div>
+                </div>
+
+                <div class="month-list"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="myProfileInner notificationPage none">
+          <div class="profileHeader"><p>Notification</p></div>
+          <div class="notificationBody">
+            <div class="notificationLeft">
+              <div class="not activeNotification">
+                <div class="notContent">
+                    Place 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dicta nostrum similique nam labore explicabo voluptatibus sint obcaecati nihil magnam.
+                </div>
+                <div class="notLeft">
+                  <span></span>
+                  <p>Place your text here 1</p>
+                </div>
+                <div class="adFile">
+                  <i class="fa-light fa-file-pen"></i>
+                  Value
+                </div>
+              </div>
+              <div class="not">
+                <div class="notContent">
+                    Place 2 Adipisicing elit. Pariatur dicta nostrum similique nam labore explicabo voluptatibus sint obcaecati nihil magnam.
+                </div>
+                <div class="notLeft">
+                  <span></span>
+                  <p>Place your text here 2</p>
+                </div>
+                <div class="adFile">
+                  <i class="fa-light fa-file-pen"></i>
+                  Value
+                </div>
+              </div>
+              <div class="not">
+                <div class="notContent">
+                    Pariatur dicta nostrum similique nam labore explicabo voluptatibus sint obcaecati nihil magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, impedit.
+                </div>
+                <div class="notLeft">
+                  <span></span>
+                  <p>Place your text here 3</p>
+                </div>
+                <div class="adFile">
+                  <i class="fa-light fa-file-pen"></i>
+                  Value
+                </div>
+              </div>
+              <div class="not">
+                <div class="notContent">
+                    Place 4 Ipsum Adipisicing elit. Pariatur dicta nostrum similique nam labore explicabo voluptatibus sint obcaecati nihil magnam.
+                </div>
+                <div class="notLeft">
+                  <span></span>
+                  <p>Place your text here 4</p>
+                </div>
+                <div class="adFile">
+                  <i class="fa-light fa-file-pen"></i>
+                  Value
+                </div>
+              </div>
+            </div>
+            <div class="notificationRight">
+              <div class="rightHeading">
+                <p>September 9 /2023</p>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="rightBody">
+                <p>
+                  
+                </p>
+              </div>
+              <div class="rightNextPrev">
+                <i class="fa-solid fa-caret-left"></i>
+                <p>Value</p>
+                <i class="fa-solid fa-caret-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerContainer">
+      <div class="footerBorders">
+        <div class="footer myWrapper">
+          <div class="foot1">
+            <div class="foot1Logo">
+              <a href="./index.html"><img src="./images/Logo.png" alt="" /></a>
+            </div>
+            <div class="foot1Socials">
+              <a href="" id="fb"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href="" id="insta"><i class="fa-brands fa-instagram"></i></a>
+              <a href="" id="youtube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="" id="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="foot2">
+            <h2>Customer Care</h2>
+            <p><a href="">Contact Us</a></p>
+            <p><a href="">Size Guide</a></p>
+            <p><a href="">My Order</a></p>
+            <p><a href=""> My Account </a></p>
+          </div>
+          <div class="foot3">
+            <h2>Shipping & Returns</h2>
+            <p><a href="">Shipping</a></p>
+            <p><a href="">Track Your Order</a></p>
+            <p><a href="">Returns and exchanges</a></p>
+            <p class="footerFaq">
+              <a href="./faq.html"
+                >FAQ <i class="fa-light fa-comments-question"></i
+              ></a>
+            </p>
+          </div>
+          <div class="foot4">
+            <h2>Corporate</h2>
+            <p><a href="">Careers</a></p>
+            <p><a href="">Social Responsibility</a></p>
+            <p><a href="">Reseller</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="myWrapper">
+        <div class="copyright">
+          <i class="fa-light fa-copyright"></i>
+          2022 Getguide all rights reserved
+        </div>
+      </div>
+    </div>
+
+    <script src="./JS/calendar.js"></script>
+    <script src="./JS/myProfile.js"></script>
+  </body>
+</html>
