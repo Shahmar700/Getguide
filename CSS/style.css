@@ -2543,11 +2543,11 @@ span,
 .myProfileContainer {
   background-color: #d6e0ff;
   padding: 52px 0;
+  position: relative;
 }
 .myProfileContainer .contForNav {
   width: 80%;
   margin: 0 auto;
-  position: relative;
 }
 
 .myProfileInner {
@@ -2633,7 +2633,7 @@ span,
 .myProfileInner .profileBtn i {
   margin-right: 10px;
 }
-.contForNav .navigation {
+.myProfileContainer .navigation {
   width: 60px;
   padding: 37px 13px;
   padding-bottom: 10px;
@@ -2645,15 +2645,15 @@ span,
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 15%;
-  left: -30px;
+  top: 200px;
+  left: 8.5%;
 }
-.contForNav .navigation i {
+.myProfileContainer .navigation i {
   color: var(--white);
   margin-bottom: 27px;
   cursor: pointer;
 }
-.contForNav .navigation i:nth-child(4) {
+.myProfileContainer .navigation i:nth-child(4) {
   margin: 0;
 }
 .activeIcon {
@@ -2706,6 +2706,7 @@ span,
 }
 
 /* Notification in Profile */
+
 .myProfileInner .profileHeader p {
   font-family: "Euclid Medium";
   font-size: 20px;
