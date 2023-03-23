@@ -1652,7 +1652,6 @@ span,
 .guidesPage input[type="checkbox"]:checked::after {
   display: block;
 }
-
 .languageFilter .languages {
   height: 0;
   overflow: hidden;
